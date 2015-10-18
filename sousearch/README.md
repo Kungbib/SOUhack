@@ -1,6 +1,6 @@
 # sousearch
-Skiss för SOU-labb
 
+Minimal söktjänst för SOU-material baserad på Django och Elasticsearch.
 
 ## Installera
 
