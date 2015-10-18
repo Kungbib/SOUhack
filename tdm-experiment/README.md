@@ -1,4 +1,4 @@
-# SOUlab
+# TDM-experiment
 
 Snabblabb med SOU-data efter blogginlägg. Läs mer på http://www.christopherkullenberg.se/relationer-i-souniversum/
 
