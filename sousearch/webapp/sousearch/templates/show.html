@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<div role="main" class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>SOU {{sou.number}} - {{sou.title}}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <p><a href="http://libris.kb.se/bib/{{sou.libris_bib_id}}">Post i Libris</a></p>
+      <p>(plats för mer information om denna SOU...)</p>
+    </div>
+    <div class="col-md-3" lang="sv">
+    </div>
+    <div class="col-md-3">
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load highlight %}
+{% load static %}
+{% load i18n %}
+{% load bootstrap_pagination %}
+
+{% block head_title %}
+{% trans "Sök i SOU" %}
+{% endblock %}
+
+{% block content %}
+<div class="container" role="main">
+
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Sök</h1>
+          <p>(sökinstruktion)</p>
+
+          <form class="form-horizontal" method="GET" action="." role="search">
+              <div class="form-group" role="search">
+                <div class="col-md-6">
+                  <label class="sr-only" for="q">Sök efter</label>
+                  <input type="search" class="form-control" id="q" name="q" value="{{query}}">
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <button type="submit" id="searchbtn" class="btn-block btn btn-primary">Sök</button>
+                </div>
+              </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="row searchresult">
+        <div class="col-md-12">
+        {% if searcherror %}
+        <div class="alert alert-danger" role="alert">
+          <p><strong>Sökfunktionen fungerar inte just nu</strong> Var vänlig försök senare.</p>
+        </div>
+        {% endif %}
+
+        {% if page %}
+
+        <h2 id="result">Sökresultat</h2>
+        <p>{{ page.paginator.count }} träffar</p>
+        {% bootstrap_paginate page range=8 show_prev_next="true" show_first_last="true" %}
+
+          {% for result in page.object_list %}
+          <div class="row result">
+            <div class="col-md-8">
+              <h3><a href="/sou/{{result.number}}/">{{result.number}} - {{result.title}}</a></h3>
+              <p>{% highlight result.text with query max_length 180 %}</p>
+            </div>
+            <div class="col-md-4">
+            </div>
+          </div>
+          {% endfor %}
+
+          {% bootstrap_paginate page range=10 %}
+
+        {% else %}
+          {% if query %}
+          <div class="center-block alert alert-warning" role="alert">
+            <p><strong>Inga SOU:er hittades för det angivna sökbegreppet</strong></p>
+            <p>Söktips...</p>
+          </div>
+          {% endif %}
+        {% endif %}
+        </div>
+      </div>
+</div>
+{% endblock %}

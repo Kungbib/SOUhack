@@ -1,0 +1,3 @@
+{{ object.number }}
+{{ object.title }}
+{{ object.ocr_text }}

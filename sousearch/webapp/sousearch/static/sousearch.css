@@ -1,0 +1,12 @@
+.navbar {
+  background-color: #004c8b;
+  color: #fff;
+}
+
+.navbar a, .nav li a {
+  color: #fff;
+}
+
+.navbar-logo img {
+  height: 100%;
+}

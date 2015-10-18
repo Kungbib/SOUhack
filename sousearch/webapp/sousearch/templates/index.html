@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1 class="text-small calltoaction">Sök i SOU</h1>
+    <form class="form-horizontal" method="get" action="/search/">
+      <div class="form-group" role="search">
+        <div class="col-md-3"></div>
+        <div class="col-md-4">
+          <label class="sr-only" for="q">Sök efter</label>
+          <input type="search" id="q" name="q" class="form-control">
+        </div>
+        <div class="col-md-2 col-xs-12">
+          <button type="submit" id="searchbtn" class="btn-block btn btn-primary">Sök</button>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div role="main" class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Om SOU-sök</h2>
+      <p property="description">Beskrivningstext...</p>
+      <p class="thanks">Annan text...</p>
+    </div>
+    <div class="col-md-3" lang="sv">
+    </div>
+    <div class="col-md-3">
+    </div>
+  </div>
+</div>
+
+{% endblock %}
