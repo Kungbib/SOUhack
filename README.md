@@ -36,4 +36,4 @@ http://scientometrics.flov.gu.se/files/SOU19222015.zip
 
 3. Topic modeling: http://github.com/michiexile/sou-hack-word2vec
 
-4. ...
+4. [Ordvektorer](https://kungliga-biblioteket.box.com/s/49xof4dmza2z4vmvqxaas2t19q6pyeq5)
