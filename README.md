@@ -1,5 +1,7 @@
+(Summary in english below)
+
 # SOUhack
-Kod och material relaterat till [seminariet #SOUhack](http://www.kb.se/aktuellt/evenemang/2015/SOUhack/) i KB:s serie Kulturarvet som ettor och nollor.
+Kod och material relaterat till [seminariet #SOUhack](http://www.kb.se/aktuellt/evenemang/2015/SOUhack/) i KB:s serie Kulturarvet som ettor och nollor. Dataset: https://data.kb.se/datasets/2015/02/sou/
 
 ## Semniariedelen
 Seminariet genomfördes 20 oktober på Kungl. biblioteket i Stockholm. På förmiddagen hölls öppna föreläsningar av forskare som arbetat med SOU-materialet.
@@ -23,6 +25,8 @@ På eftermiddagen genomfördes en open space-övning runt tre teman:
 1. Topic modeling / begrepp
 2. Temporal analys av teman
 3. Möjligheter att sammankoppla materialet med annat material
+
+Ett 40-tal deltagare samarbetade runt olika analyser av Statens offentliga utredningar som text.
  
 
 ## Datamängder och kod som uppstod runt #SOUhack 
@@ -37,3 +41,7 @@ http://scientometrics.flov.gu.se/files/SOU19222015.zip
 3. Topic modeling: http://github.com/michiexile/sou-hack-word2vec
 
 4. [Ordvektorer](https://kungliga-biblioteket.box.com/s/49xof4dmza2z4vmvqxaas2t19q6pyeq5)
+
+
+# Summary in english
+The National Library of Sweden hosted the event #souhack to explore a specific document collection. Around 40 practitioners gathered to analyze bureaucratic texts through visualization and text analytics. The type of document - [Statens offentliga utredningar](https://en.wikipedia.org/wiki/Statens_offentliga_utredningar) - is a report published by government inquiry committees. The dataset used: https://data.kb.se/datasets/2015/02/sou/ 
